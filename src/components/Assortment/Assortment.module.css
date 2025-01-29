@@ -1,0 +1,83 @@
+/* Секция ассортимента */
+.assortment {
+  padding: 60px 20px;
+  background-color: #f5f5f5; /* Светлый фон */
+  border-top: 2px solid #e0e0e0; /* Разделитель секции сверху */
+  border-bottom: 2px solid #e0e0e0; /* Разделитель секции снизу */
+}
+
+/* Заголовок секции */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Сетка прямоугольников */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    300px
+  ); /* Прямоугольники шириной 300px */
+  gap: 10px; /* Промежутки между прямоугольниками */
+  justify-content: center; /* Центрируем плитки */
+}
+
+/* Карточка */
+.card {
+  width: 300px; /* Фиксированная ширина */
+  height: 150px; /* Фиксированная высота */
+  overflow: hidden;
+  border-radius: 8px; /* Скругленные углы */
+  background-color: #ffffff; /* Белый фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dcdcdc; /* Легкая тонкая обводка */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Изображение */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Вписать изображение внутрь карточки с сохранением пропорций */
+  padding: 5px; /* Отступ от краев карточки */
+}
+
+/* Эффект наведения */
+.card:hover {
+  transform: scale(1.03); /* Увеличение карточки при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Увеличенная тень при наведении */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      200px
+    ); /* Уменьшаем ширину карточек */
+  }
+
+  .card {
+    width: 200px; /* Уменьшенная ширина карточки */
+    height: 120px; /* Уменьшенная высота карточки */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Одна карточка в ряд */
+  }
+
+  .card {
+    width: 90%; /* Делаем карточку более гибкой */
+    margin: 0 auto; /* Центрируем карточку */
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "header": {
+    "company": "COMPANY",
+    "assortment": "ASSORTMENT",
+    "priceList": "PRICE LIST",
+    "contacts": "CONTACTS",
+    "news": "NEWS"
+  },
+  "hero1": { "title": "ABOUT US" },
+  "hero2": { "title": "ASSORTMENT" },
+  "hero3": { "title": "PRICE LIST" },
+  "hero4": { "title": "CONTACTS" },
+  "hero5": { "title": "NEWS" },
+  "aboutUs": {
+    "title": "ABOUT US",
+    "p1": "The Domus Frigus company was founded in April 2004 and today is the general distributor of the world's leading manufacturers of refrigeration equipment, components and related products. It has one of the largest warehouses in Ukraine and guarantees fast deliveries of equipment and components.",
+    "p2": "Our reliable partners include such well-known brands as BITZER, ZIEHL-ABEGG, EBMPAPST, FUCHS RENISO, CASTEL, and many others.",
+    "p3": "Our company provides a flexible system of discounts, a guarantee for supplied equipment, as well as information and technical support."
+  },
+  "assortment": { "title": "Assortment" },
+  "priceList": { "title": "Price List" },
+  "contacts": { "title": "Contacts", "phone": "Phone", "email": "Email", "address": "Address", "street": "St. Knyazya Yaroslav the Wise, 68, 49000, Dnipro, Ukraine" },
+  "news": { "title": "News" },
+  "footer": {"location": "Dnipro"}
+}

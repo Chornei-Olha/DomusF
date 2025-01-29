@@ -1,0 +1,143 @@
+@media (max-width: 767px) {
+  .allSection {
+    padding: 0px 10px;
+    margin-top: 30px;
+    background-color: var(--color-white);
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .allSection {
+    padding: 0px 50px 132px 50px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--color-white);
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificatesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .certificatesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificatesHeader h2 {
+    font-family: 'Inter';
+    font-size: 36px;
+    line-height: 50.4px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .certificatesHeader h2 {
+    font-family: 'Inter';
+    font-size: 36px;
+    line-height: 50.4px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.arrow:hover {
+  background-color: #bbb;
+}
+
+.arrow svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-black);
+}
+
+@media (max-width: 767px) {
+  .certificatesContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* max-width: 100%; */
+    /* gap: 5px; */
+  }
+}
+@media (min-width: 768px) {
+  .certificatesContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate {
+    min-width: 220px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  .certificate {
+    min-width: calc(25% - 20px); /* Видимые 4 отзыва с учетом gap */
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificate img {
+    /* min-width: 200px;
+    height: 159px; */
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (min-width: 768px) {
+  .certificate img {
+    /* width: 100%;
+    height: 200px; */
+    object-fit: cover; /* Устанавливаем обрезку для сохранения пропорций */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* @media (max-width: 768px) {
+  .arrows {
+    display: none;
+  }
+} */

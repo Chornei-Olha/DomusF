@@ -1,0 +1,147 @@
+@media (max-width: 767px) {
+  .footer {
+    position: relative;
+    background-color: var(--color-white);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column; /* Выровняем элементы по вертикали */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-arrow);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-color: var(--color-white);
+    padding: 80px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.contacts {
+  flex: 1; /* Контакты занимают всю левую часть */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 13.5px;
+}
+
+.contactLink {
+  font-family: 'Inter';
+  color: var(--color-text1);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.doctorInfo {
+  flex: 0 1 auto; /* Занимает только необходимое пространство для кнопки */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.doctorTitle {
+  font-family: 'Inter';
+  font-size: 14.4px;
+  line-height: 20.2px;
+  font-weight: 400;
+  color: var(--color-text1);
+  margin-top: 22px;
+}
+
+.logo {
+  flex: 2; /* Логотип займет центральное место */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+@media (max-width: 767px) {
+  .logoImage {
+    min-width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logoImage {
+    width: 450px;
+  }
+}
+
+.languageSwitcherContainer {
+  flex: 1; /* Языки занимают правую часть */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+
+.consultationButton {
+  background-color: rgba(106, 76, 156, 0.6);
+  color: var(--color-white);
+  border: none;
+  border-radius: 100px;
+  padding: 18px 27px;
+  font-family: 'Inter';
+  font-size: 14.4px;
+  line-height: 20.2px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 22px; /* Отступ сверху для правильного расположения кнопки */
+}
+
+.consultationButton:hover {
+  background-color: rgba(106, 76, 156, 1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts,
+  .doctorInfo {
+    text-align: center;
+  }
+}

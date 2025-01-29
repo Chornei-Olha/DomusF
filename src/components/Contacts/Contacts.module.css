@@ -1,0 +1,97 @@
+/* Секция контактов */
+.contacts {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Светлый фон для контента */
+  border-top: 2px solid #e0e0e0; /* Разделитель секции сверху */
+  border-bottom: 2px solid #e0e0e0; /* Разделитель секции снизу */
+}
+
+/* Заголовок секции */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Сетка для карточек контактов */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    300px
+  ); /* Карточки шириной 300px */
+  gap: 20px; /* Промежутки между карточками */
+  justify-content: center; /* Центрируем карточки */
+}
+
+/* Карточка для контакта */
+.card {
+  width: 300px; /* Фиксированная ширина */
+  height: auto;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 8px; /* Скругленные углы */
+  border: 1px solid #dcdcdc; /* Легкая обводка */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Иконка в карточке */
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* Информация о контакте */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Заголовок контакта */
+.contactTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Ссылка на контакт */
+.contactLink {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Эффект наведения */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+
+  .card {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Одна карточка в ряд */
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,59 @@
+/* Секция "PriceList" */
+.priceList {
+  padding: 60px 20px;
+  background-color: #f5f5f5; /* Светлый фон */
+}
+
+/* Заголовок секции */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Табличка */
+.table {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #dcdcdc; /* Легкая обводка таблицы */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Строка таблицы */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+/* Последняя строка без нижней границы */
+.row:last-child {
+  border-bottom: none;
+}
+
+/* Название файла */
+.fileName {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Кнопка "Скачать" */
+.downloadBtn {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #6c63ff; /* Фиолетовый цвет */
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.downloadBtn:hover {
+  background-color: #5148d1; /* Более темный фиолетовый при наведении */
+}
