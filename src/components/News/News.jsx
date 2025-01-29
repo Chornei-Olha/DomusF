@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './News.module.css';
 import { useTranslation } from 'react-i18next'; // Хук для перевода
-import i18next from 'i18next';
 
 const News = () => {
   const { t } = useTranslation('translation');

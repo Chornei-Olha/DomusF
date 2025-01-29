@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Assortment.module.css';
 import { useTranslation } from 'react-i18next'; // Хук для перевода
-import i18next from 'i18next';
 
 // Импортируем изображения
 import img1 from '../../assets/images/logo/danfoss.jpg';
@@ -11,7 +10,7 @@ import img4 from '../../assets/images/logo/Bitzer.jpg';
 import img5 from '../../assets/images/logo/Leitenberger.jpg';
 
 const Assortment = () => {
-  const { t, i18n } = useTranslation('translation');
+  const { t } = useTranslation('translation');
 
   // Массив изображений для плиток
   const items = [img1, img2, img3, img4, img5];

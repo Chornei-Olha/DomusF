@@ -1,14 +1,13 @@
 import React from 'react';
 import styles from './PriceList.module.css';
 import { useTranslation } from 'react-i18next'; // Хук для перевода
-import i18next from 'i18next';
 
 // Импортируем файлы PDF
 import pdf1 from '../../assets/files/2025.01.21  BERLING CENNIK 2025__RU.pdf';
 import pdf2 from '../../assets/files/2025.01.21  BERLING CENNIK CO2__RU.pdf';
 
 const PriceList = () => {
-  const { t, i18n } = useTranslation('translation');
+  const { t } = useTranslation('translation');
 
   return (
     <section id="priceList" className={styles.priceList}>
