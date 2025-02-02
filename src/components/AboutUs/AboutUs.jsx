@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutUs.module.css';
-import { useTranslation } from 'react-i18next'; // Хук для перевода
+import { useTranslation } from 'react-i18next';
+const event = require('../../assets/images/class.webp');
 
 const AboutUs = () => {
   const { t } = useTranslation('translation');
@@ -14,13 +15,9 @@ const AboutUs = () => {
           <p className={styles.text}>{t('aboutUs.p2')}</p>
           <p className={styles.text}>{t('aboutUs.p3')}</p>
         </div>
-        {/* <div className={styles.imageContainer}>
-          <img
-            src="https://via.placeholder.com/400"
-            alt="О нас"
-            className={styles.image}
-          />
-        </div> */}
+        <div className={styles.imageContainer}>
+          <img src={event} alt="О нас" className={styles.image} />
+        </div>
       </div>
     </section>
   );

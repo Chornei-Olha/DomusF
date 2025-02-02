@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap; /* Для адаптации на маленьких экранах */
   gap: 20px;
 }
@@ -38,15 +38,14 @@
 
 /* Контейнер для изображения */
 .imageContainer {
-  flex: 1 1 40%; /* Занимает 40% ширины контейнера */
-  display: flex;
   justify-content: center;
   align-items: center;
+  width: 50vw;
 }
 
 /* Изображение */
 .image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px; /* Слегка скругленные углы */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для изображения */
