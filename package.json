@@ -22,7 +22,8 @@
     "eject": "react-scripts eject",
     "format": "prettier --write .",
     "clean": "rimraf node_modules/.cache dist",
-    "build:css": "npx postcss src/components/**/*.css --dir dist"
+    "build:css": "npx postcss src/components/**/*.css --dir dist",
+    "preinstall": "npx npm@10 install --legacy-peer-deps"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,7 @@
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.4.2",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "typescript": "^4.8.4"
   }
 }
