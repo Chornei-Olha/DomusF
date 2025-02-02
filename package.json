@@ -25,6 +25,9 @@
     "build:css": "npx postcss src/components/**/*.css --dir dist",
     "preinstall": "npx npm@10 install --legacy-peer-deps"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
