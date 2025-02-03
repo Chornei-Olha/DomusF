@@ -24,8 +24,8 @@ const Footer = () => {
             alt="Telephone Logo"
             className={styles.icon}
           />
-          <a href="tel:+380563779259" className={styles.contactLink}>
-            +38 (056) 377 92 59
+          <a href="tel:+380443565620" className={styles.contactLink}>
+            +38 (044) 3565620
           </a>
         </div>
 
@@ -36,23 +36,35 @@ const Footer = () => {
             alt="Telephone Logo"
             className={styles.icon}
           />
-          <a href="tel:+380562314081" className={styles.contactLink}>
-            +38 (0562) 31 40 81
+          <a href="tel:+380443565630" className={styles.contactLink}>
+            +38 (044) 3565630
+          </a>
+        </div>
+
+        <div className={styles.contactItem}>
+          <img
+            src={telephone}
+            loading="lazy"
+            alt="Telephone Logo"
+            className={styles.icon}
+          />
+          <a href="tel:+380676502036" className={styles.contactLink}>
+            +38 (067) 6502036
           </a>
         </div>
         <div className={styles.doctorInfo}>
-        <a
-          href="https://g.co/kgs/tB2qtt9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.buttonLink}
-        >
-          <button className={styles.consultationButton}>{t('footer.location')}</button>
-        </a>
+          <a
+            href="https://g.co/kgs/tB2qtt9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.buttonLink}
+          >
+            <button className={styles.consultationButton}>
+              {t('footer.location')}
+            </button>
+          </a>
+        </div>
       </div>
-      </div>
-
-
 
       <div className={styles.logo}>
         <img

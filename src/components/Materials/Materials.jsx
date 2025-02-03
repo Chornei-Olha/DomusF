@@ -1,52 +1,32 @@
 import React, { useRef } from 'react';
-import { ReactComponent as FaChevronLeft } from '../../assets/images/etc/chevron-left-solid.svg';
-import { ReactComponent as FaChevronRight } from '../../assets/images/etc/chevron-right-solid.svg';
+import { ReactComponent as FaChevronLeft } from '../../assets/images/chevron-left-solid.svg';
+import { ReactComponent as FaChevronRight } from '../../assets/images/chevron-right-solid.svg';
 import styles from './Materials.module.css';
-import picture1 from '../../assets/images/image.jpg';
-import picture2 from '../../assets/images/image.jpg';
-import picture3 from '../../assets/images/image.jpg';
-import picture4 from '../../assets/images/image.jpg';
-import picture5 from '../../assets/images/image.jpg';
-import picture6 from '../../assets/images/image.jpg';
-import picture7 from '../../assets/images/image.jpg';
-
-
+import picture1 from '../../assets/images/foto.jpg';
+import picture2 from '../../assets/images/foto2.png';
+import picture3 from '../../assets/images/foto3.jpg';
+import picture4 from '../../assets/images/foto4.png';
 
 const materials = [
   {
     id: 1,
     image: picture1,
-    link: '/consultation',
+    // link: '/consultation',
   },
   {
     id: 2,
     image: picture2,
-    link: '/rules',
+    // link: '/rules',
   },
   {
     id: 3,
     image: picture3,
-    link: '/bloodTest',
+    // link: '/bloodTest',
   },
   {
     id: 4,
     image: picture4,
-    link: '/bloodDiabetes',
-  },
-  {
-    id: 5,
-    image: picture5,
-    link: '/bloodDiabetes',
-  },
-  {
-    id: 6,
-    image: picture6,
-    link: '/bloodDiabetes',
-  },
-  {
-    id: 7,
-    image: picture7,
-    link: '/bloodDiabetes',
+    // link: '/bloodDiabetes',
   },
 ];
 

@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next'; // Хук для перевод�
 import telephoneIcon from '../../assets/images/telephone.png';
 import emailIcon from '../../assets/images/email.png';
 import locationIcon from '../../assets/images/location.png';
+import facebookIcon from '../../assets/images/facebook.png';
 
 const Contacts = () => {
   const { t } = useTranslation('translation');
@@ -15,14 +16,20 @@ const Contacts = () => {
     {
       icon: telephoneIcon,
       title: t('contacts.phone'),
-      value: '+38 (056) 377 92 59',
-      link: 'tel:+380563779259',
+      value: '+38 (067) 6502036',
+      link: 'tel:+380676502036',
     },
     {
       icon: emailIcon,
       title: t('contacts.email'),
-      value: 'info@domusfrigus.ua',
-      link: 'mailto:info@domusfrigus.ua',
+      value: 'admin@domus.biz.ua',
+      link: 'mailto:admin@domus.biz.ua',
+    },
+    {
+      icon: facebookIcon,
+      title: t('contacts.facebook'),
+      value: 'DomusFrigus',
+      link: 'https://www.facebook.com/DomusFrigus',
     },
     {
       icon: locationIcon,

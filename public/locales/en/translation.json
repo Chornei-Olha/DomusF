@@ -19,7 +19,14 @@
   },
   "assortment": { "title": "Assortment" },
   "priceList": { "title": "Price List" },
-  "contacts": { "title": "Contacts", "phone": "Phone", "email": "Email", "address": "Address", "street": "St. Knyazya Yaroslav the Wise, 68, 49000, Dnipro, Ukraine" },
+  "contacts": {
+    "title": "Contacts",
+    "phone": "Phone",
+    "email": "Email",
+    "facebook": "Facebook",
+    "address": "Address",
+    "street": "St. Knyazya Yaroslav the Wise, 68, 49000, Dnipro, Ukraine"
+  },
   "news": { "title": "News" },
-  "footer": {"location": "Dnipro"}
+  "footer": { "location": "Dnipro" }
 }
