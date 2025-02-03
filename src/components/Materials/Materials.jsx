@@ -11,22 +11,18 @@ const materials = [
   {
     id: 1,
     image: picture1,
-    // link: '/consultation',
   },
   {
     id: 2,
     image: picture2,
-    // link: '/rules',
   },
   {
     id: 3,
     image: picture3,
-    // link: '/bloodTest',
   },
   {
     id: 4,
     image: picture4,
-    // link: '/bloodDiabetes',
   },
 ];
 
@@ -59,7 +55,6 @@ const Materials = () => {
   return (
     <section id="blog" className={styles.materialsSection}>
       <div className={styles.header}>
-        {/* <h2 className={styles.title}>Корисні матеріали</h2> */}
         <div className={styles.arrows}>
           <button
             className={styles.arrow}
