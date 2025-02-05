@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './News.module.css';
 import { useTranslation } from 'react-i18next';
+import pdf1 from '../../assets/files/Bitzer_FG_models.pdf';
 
 const newsData = [
   {
@@ -9,7 +10,7 @@ const newsData = [
   
       Серія "G" включає моделі зі збільшеними вхідними та вихідними з'єднаннями для холодоагенту порівняно зі стандартними ресиверами серій F і FS. Ця особливість є особливо корисною при використанні холодоагентів, чутливих до перепаду тиску.
       Окрім існуючих горизонтальних моделей F302G, F562G, F1052G та F1602G, ми представляємо сім нових моделей. Вперше у цій лінійці з’явилися ресивери з діаметром корпусу 500 мм.`,
-    pdfLink: '/locales/Bitzer_FG_models.pdf',
+    pdfLink: pdf1,
   },
 ];
 

@@ -10,7 +10,7 @@ import img4 from '../../assets/images/logo/danfoss.jpg';
 import img5 from '../../assets/images/logo/Deka.png';
 import img6 from '../../assets/images/logo/FELDER.png';
 import img7 from '../../assets/images/logo/gokceler_refricomp.png';
-import img8 from '../../assets/images/logo/Güntner.png';
+import img8 from '../../assets/images/logo/Guntner.png';
 import img9 from '../../assets/images/logo/higel.png';
 import img10 from '../../assets/images/logo/HME Copper.png';
 import img11 from '../../assets/images/logo/HTS .svg';
