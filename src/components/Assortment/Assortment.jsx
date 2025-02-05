@@ -26,6 +26,10 @@ import img20 from '../../assets/images/logo/WEIGUANG.png';
 import img21 from '../../assets/images/logo/Wieland - Werke AG.png';
 import img22 from '../../assets/images/logo/witt.png';
 import img23 from '../../assets/images/logo/wtk-logoR.png';
+import img24 from '../../assets/images/logo/ziehl-abegg.svg';
+import img25 from '../../assets/images/logo/4coils.png';
+import img26 from '../../assets/images/logo/Castel.png';
+import img27 from '../../assets/images/logo/fuchs-lubricants.png';
 
 const Assortment = () => {
   const { t } = useTranslation('translation');
@@ -55,6 +59,10 @@ const Assortment = () => {
     img21,
     img22,
     img23,
+    img24,
+    img25,
+    img26,
+    img27,
   ];
 
   return (

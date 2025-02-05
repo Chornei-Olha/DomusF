@@ -25,9 +25,34 @@ html {
 @media (max-width: 767px) {
   .container {
     justify-content: space-between;
-
-    gap: 30px;
   }
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+.container3 {
+  margin-left: auto;
 }
 
 img {
@@ -122,4 +147,28 @@ img {
   .navigation a {
     font-size: 20px;
   }
+}
+
+.languageSwitcherContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flag {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.flag:hover {
+  transform: scale(1.1);
 }

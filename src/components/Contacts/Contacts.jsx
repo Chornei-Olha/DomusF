@@ -35,7 +35,7 @@ const Contacts = () => {
       icon: locationIcon,
       title: t('contacts.address'),
       value: t('contacts.street'),
-      link: 'https://g.co/kgs/tB2qtt9',
+      link: 'https://maps.app.goo.gl/ivmba8TfCN44ongv9',
     },
   ];
 

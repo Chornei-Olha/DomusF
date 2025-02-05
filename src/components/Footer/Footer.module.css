@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: var(--color-arrow);
+    background-color: var(--color-white);
   }
 }
 
@@ -78,47 +78,22 @@
 
 @media (max-width: 767px) {
   .logoImage {
-    min-width: 350px;
+    min-width: 200px;
   }
 }
 
 @media (min-width: 768px) {
   .logoImage {
-    width: 450px;
+    width: 300px;
   }
-}
-
-.languageSwitcherContainer {
-  flex: 1; /* Языки занимают правую часть */
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.languageButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.flag {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: transform 0.2s ease;
-}
-
-.flag:hover {
-  transform: scale(1.1);
 }
 
 .consultationButton {
   background-color: rgba(106, 76, 156, 0.6);
   color: var(--color-white);
   border: none;
-  border-radius: 100px;
-  padding: 18px 27px;
+  border-radius: 5px;
+  padding: 10px 30px;
   font-family: 'Inter';
   font-size: 14.4px;
   line-height: 20.2px;
