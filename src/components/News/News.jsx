@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from './News.module.css';
 import { useTranslation } from 'react-i18next';
 import pdf1 from '../../assets/files/Bitzer_FG_models.pdf';
+import telephone from '../../assets/images/telephone.png';
+import emailIcon from '../../assets/images/email.png';
 
 const newsData = [
   {
@@ -25,6 +27,52 @@ const News = () => {
   return (
     <section id="news" className={styles.newsSection}>
       <div className={styles.container}>
+        <div className={styles.contacts}>
+          <div className={styles.contactItem}>
+            <img
+              src={telephone}
+              loading="lazy"
+              alt="Телефон"
+              className={styles.icon}
+            />
+            <a href="tel:+380443565620" className={styles.contactLink}>
+              +38 (044) 356 56 20
+            </a>
+          </div>
+          <div className={styles.contactItem}>
+            <img
+              src={telephone}
+              loading="lazy"
+              alt="Телефон"
+              className={styles.icon}
+            />
+            <a href="tel:+380443565630" className={styles.contactLink}>
+              +38 (044) 356 56 30
+            </a>
+          </div>
+          <div className={styles.contactItem}>
+            <img
+              src={telephone}
+              loading="lazy"
+              alt="Телефон"
+              className={styles.icon}
+            />
+            <a href="tel:+380676502036" className={styles.contactLink}>
+              +38 (067) 650 20 36
+            </a>
+          </div>
+          <div className={styles.contactItem}>
+            <img
+              src={emailIcon}
+              loading="lazy"
+              alt="email"
+              className={styles.icon}
+            />
+            <a href="mailto:info@domus.biz.ua" className={styles.contactLink}>
+              info@domus.biz.ua
+            </a>
+          </div>
+        </div>
         <h2 className={styles.title}>{t('news.title')}</h2>
         <ul className={styles.newsList}>
           {newsData.map((news, index) => (

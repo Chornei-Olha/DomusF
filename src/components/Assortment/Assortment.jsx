@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Assortment.module.css';
 import { useTranslation } from 'react-i18next';
 import telephone from '../../assets/images/telephone.png';
+import emailIcon from '../../assets/images/email.png';
 
 // Импортируем изображения
 import img1 from '../../assets/images/logo/BITZER.gif';
@@ -69,35 +70,44 @@ const Assortment = () => {
           <img
             src={telephone}
             loading="lazy"
-            alt="Telephone Logo"
+            alt="Телефон"
             className={styles.icon}
           />
           <a href="tel:+380443565620" className={styles.contactLink}>
-            +38 (044) 3565620
+            +38 (044) 356 56 20
           </a>
         </div>
-
         <div className={styles.contactItem}>
           <img
             src={telephone}
             loading="lazy"
-            alt="Telephone Logo"
+            alt="Телефон"
             className={styles.icon}
           />
           <a href="tel:+380443565630" className={styles.contactLink}>
-            +38 (044) 3565630
+            +38 (044) 356 56 30
           </a>
         </div>
-
         <div className={styles.contactItem}>
           <img
             src={telephone}
             loading="lazy"
-            alt="Telephone Logo"
+            alt="Телефон"
             className={styles.icon}
           />
           <a href="tel:+380676502036" className={styles.contactLink}>
-            +38 (067) 6502036
+            +38 (067) 650 20 36
+          </a>
+        </div>
+        <div className={styles.contactItem}>
+          <img
+            src={emailIcon}
+            loading="lazy"
+            alt="email"
+            className={styles.icon}
+          />
+          <a href="mailto:info@domus.biz.ua" className={styles.contactLink}>
+            info@domus.biz.ua
           </a>
         </div>
       </div>

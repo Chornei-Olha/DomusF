@@ -59,10 +59,11 @@
 }
 
 .contacts {
-  flex: 1; /* Контакты занимают всю левую часть */
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .contactItem {
@@ -81,9 +82,17 @@
   font-family: 'Inter';
   color: var(--color-text1);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .contactLink:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
