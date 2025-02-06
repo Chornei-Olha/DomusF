@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Assortment.module.css';
 import { useTranslation } from 'react-i18next';
+import telephone from '../../assets/images/telephone.png';
 
 // Импортируем изображения
 import img1 from '../../assets/images/logo/BITZER.gif';
@@ -17,9 +18,7 @@ import img11 from '../../assets/images/logo/HTS .svg';
 import img12 from '../../assets/images/logo/KME Mansfeld GmbH.jpg';
 import img13 from '../../assets/images/logo/KRIWAN .jpg';
 import img14 from '../../assets/images/logo/Leitenberger .jpg';
-import img15 from '../../assets/images/logo/Leitenberger.jpg';
 import img16 from '../../assets/images/logo/MKM GmbH.jpg';
-import img17 from '../../assets/images/logo/MKM.jpg';
 import img18 from '../../assets/images/logo/SANHA.png';
 import img19 from '../../assets/images/logo/Sopormetal .png';
 import img20 from '../../assets/images/logo/WEIGUANG.png';
@@ -37,29 +36,27 @@ const Assortment = () => {
   // Массив изображений для плиток
   const items = [
     img1,
+    img8,
+    img24,
     img2,
     img3,
     img4,
     img5,
     img6,
     img7,
-    img8,
     img9,
     img10,
     img11,
     img12,
     img13,
     img14,
-    img15,
     img16,
-    img17,
     img18,
     img19,
     img20,
     img21,
     img22,
     img23,
-    img24,
     img25,
     img26,
     img27,
@@ -67,6 +64,43 @@ const Assortment = () => {
 
   return (
     <section id="assortment" className={styles.assortment}>
+      <div className={styles.contacts}>
+        <div className={styles.contactItem}>
+          <img
+            src={telephone}
+            loading="lazy"
+            alt="Telephone Logo"
+            className={styles.icon}
+          />
+          <a href="tel:+380443565620" className={styles.contactLink}>
+            +38 (044) 3565620
+          </a>
+        </div>
+
+        <div className={styles.contactItem}>
+          <img
+            src={telephone}
+            loading="lazy"
+            alt="Telephone Logo"
+            className={styles.icon}
+          />
+          <a href="tel:+380443565630" className={styles.contactLink}>
+            +38 (044) 3565630
+          </a>
+        </div>
+
+        <div className={styles.contactItem}>
+          <img
+            src={telephone}
+            loading="lazy"
+            alt="Telephone Logo"
+            className={styles.icon}
+          />
+          <a href="tel:+380676502036" className={styles.contactLink}>
+            +38 (067) 6502036
+          </a>
+        </div>
+      </div>
       <h2 className={styles.title}> {t('assortment.title')}</h2>
       <div className={styles.grid}>
         {items.map((item, index) => (

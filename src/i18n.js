@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector) // Детектор языка
   .use(initReactI18next) // Подключаем React
   .init({
-    fallbackLng: 'en', // Язык по умолчанию
+    fallbackLng: 'uk', // Язык по умолчанию
     supportedLngs: ['en', 'uk'], // Поддерживаемые языки
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json', // Путь к файлам переводов

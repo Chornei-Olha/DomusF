@@ -26,6 +26,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Текстовые абзацы */
@@ -36,17 +37,106 @@
   margin-bottom: 15px;
 }
 
-/* Контейнер для изображения */
-.imageContainer {
-  justify-content: center;
+/* Контейнер для изображений-карусели */
+.carousel {
+  display: flex;
   align-items: center;
-  width: 50vw;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  gap: 30px;
 }
 
-/* Изображение */
-.image {
+/* Контейнер с изображениями */
+.imageContainer {
+  display: flex;
+  overflow: hidden;
+  width: 400px; /* Фиксированная ширина окна */
+  height: 450px;
+  position: relative;
+  align-items: center;
+}
+
+/* Анимация смены изображений */
+.imageContainer img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Слегка скругленные углы */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для изображения */
+  position: absolute;
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform: scale(0.9) translateX(-50%);
+}
+
+/* Видимое фото */
+.imageContainer img.active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+/* Кнопки прокрутки */
+.arrow {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #000;
+}
+
+/* Контакты */
+.contacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 13.5px;
+}
+
+.contactLink {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text1);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .imageContainer {
+    width: 300px;
+    height: 280px;
+    align-items: center;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Contacts.module.css';
-import { useTranslation } from 'react-i18next'; // Хук для перевода
+import { useTranslation } from 'react-i18next';
 
 // Импортируем иконки для контактной информации
 import telephoneIcon from '../../assets/images/telephone.png';
@@ -16,14 +16,18 @@ const Contacts = () => {
     {
       icon: telephoneIcon,
       title: t('contacts.phone'),
-      value: '+38 (067) 6502036',
-      link: 'tel:+380676502036',
+      values: [
+        '+38 (044) 356 56 20',
+        '+38 (044) 356 56 30',
+        '+38 (067) 650 20 36',
+      ],
+      links: ['tel:+380443565620', 'tel:+380443565630', 'tel:+380676502036'],
     },
     {
       icon: emailIcon,
       title: t('contacts.email'),
-      value: 'admin@domus.biz.ua',
-      link: 'mailto:admin@domus.biz.ua',
+      value: 'info@domus.biz.ua',
+      link: 'mailto:info@domus.biz.ua',
     },
     {
       icon: facebookIcon,
@@ -52,9 +56,25 @@ const Contacts = () => {
             />
             <div className={styles.contactInfo}>
               <h3 className={styles.contactTitle}>{contact.title}</h3>
-              <a href={contact.link} className={styles.contactLink}>
-                {contact.value}
-              </a>
+
+              {/* Если у контакта массив значений (например, телефоны) */}
+              {contact.values ? (
+                <div className={styles.multiContact}>
+                  {contact.values.map((phone, i) => (
+                    <a
+                      key={i}
+                      href={contact.links[i]}
+                      className={styles.contactLink}
+                    >
+                      {phone}
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <a href={contact.link} className={styles.contactLink}>
+                  {contact.value}
+                </a>
+              )}
             </div>
           </div>
         ))}
