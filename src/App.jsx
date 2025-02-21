@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 
 import HomePage from './pages/HomePage/HomePage.jsx';
 import Page1 from './pages/Page1/Page1.jsx';
@@ -12,16 +13,18 @@ const basePath = process.env.REACT_APP_BASE_PATH || '/';
 
 const App = () => {
   return (
-    <BrowserRouter basename={basePath}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutUs" element={<Page1 />} />
-        <Route path="/assortment" element={<Page2 />} />
-        <Route path="/priceList" element={<Page3 />} />
-        <Route path="/contacts" element={<Page4 />} />
-        <Route path="/news" element={<Page5 />} />
-      </Routes>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter basename={basePath}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutUs" element={<Page1 />} />
+          <Route path="/assortment" element={<Page2 />} />
+          <Route path="/priceList" element={<Page3 />} />
+          <Route path="/contacts" element={<Page4 />} />
+          <Route path="/news" element={<Page5 />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 
