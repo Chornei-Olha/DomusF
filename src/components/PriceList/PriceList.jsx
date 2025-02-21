@@ -5,8 +5,8 @@ import telephone from '../../assets/images/telephone.png';
 import emailIcon from '../../assets/images/email.png';
 
 // Импортируем файлы PDF
-import pdf1 from '../../assets/files/2025.01.21  BERLING CENNIK 2025__RU.pdf';
-import pdf2 from '../../assets/files/2025.01.21  BERLING CENNIK CO2__RU.pdf';
+// import pdf1 from '../../assets/files/2025.01.21  BERLING CENNIK 2025__RU.pdf';
+// import pdf2 from '../../assets/files/2025.01.21  BERLING CENNIK CO2__RU.pdf';
 
 const PriceList = () => {
   const { t } = useTranslation('translation');
@@ -62,20 +62,16 @@ const PriceList = () => {
       <h2 className={styles.title}>{t('priceList.title')}</h2>
       <div className={styles.table}>
         <div className={styles.row}>
-          <span className={styles.fileName}>
-            Прейскурант складское оснащение 2025
-          </span>
-          <a href={pdf1} download className={styles.downloadBtn}>
+          <span className={styles.fileName}>Прейскурант 2025</span>
+          {/* <a href={pdf1} download className={styles.downloadBtn}>
             Скачать
-          </a>
+          </a> */}
         </div>
         <div className={styles.row}>
-          <span className={styles.fileName}>
-            Прейскурант складское оснащение CO2
-          </span>
-          <a href={pdf2} download className={styles.downloadBtn}>
+          <span className={styles.fileName}>Прейскурант</span>
+          {/* <a href={pdf2} download className={styles.downloadBtn}>
             Скачать
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
